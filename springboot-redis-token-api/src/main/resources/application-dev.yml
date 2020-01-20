@@ -1,0 +1,26 @@
+#redis
+spring:
+  redis:
+    host: localhost
+    port: 6379
+    password:
+    jedis:
+      pool:
+        max-idle: 8
+        max-wait: 60000
+        min-idle: 0
+        max-active: 100
+    timeout: 30000
+  #数据源
+  datasource:
+    url: jdbc:mysql://localhost:3306/demo?serverTimezone=GMT%2B8&autoR&useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true
+    username: root
+    password: root
+
+
+
+
+
+logging:
+  level:
+    root: debug
